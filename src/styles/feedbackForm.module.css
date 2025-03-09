@@ -1,0 +1,158 @@
+.title {
+  font-size: 48px;
+  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 1240px;
+  left: 341px;
+  margin: 60px auto;
+  padding: 30px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  width: 1240px;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background: #24253000;
+  color: #ffffff;
+}
+.field label {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: -8px;
+  background-color: #31313F;
+  padding: 2px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.checkboxLabel input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff; 
+  background: #31313F;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+.checkboxLabel input[type="checkbox"]::after {
+  content: "✔";
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.checkboxLabel input[type="checkbox"]:checked::after {
+  display: block;
+}
+
+.buttonСontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.submit {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submit:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .container2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+ 
+  .field {
+    width: 85%;
+    padding: 10px;
+  }
+  .field input,
+  .field textarea {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+  }
+  .field label {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -8px;
+    background-color: #31313F;
+    padding: 2px;}
+
+  .checkboxLabel {
+    font-size: 14px;
+  }
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+
+  .submit {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

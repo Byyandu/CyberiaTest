@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
+    font-family: Fira Sans Condensed;
+    letter-spacing: 0%;
+    color: #fff;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  
+  

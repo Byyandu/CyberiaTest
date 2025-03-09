@@ -1,0 +1,112 @@
+.footer {
+  background: #313341;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo {
+  width: 196px;
+}
+
+.container2 {
+  vertical-align: top;
+  margin-left: 150px;
+}
+.container2 p{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-auto-flow: column;
+  height: 45px;
+}
+
+.footer nav {
+  display: flex;
+  height: 145px;
+  vertical-align: top;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  .logo {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .footer nav {
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .container {
+    width: 100%;
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .container2 p {
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 60px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .container {
+    font-size: 12px;
+    margin: 0;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .container2{
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .container p{
+    padding: 10px;
+  }
+  .container2 p{
+    font-size: 12px;
+    padding: 10px;
+    margin: 0;
+    height: 100%;
+  }
+  .footer nav {
+    display: none;
+  }
+}
