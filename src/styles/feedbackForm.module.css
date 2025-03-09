@@ -135,8 +135,8 @@
   .field label {
     position: absolute;
     margin-left: 25px;
-    margin-top: -8px;
-    background-color: #31313F;
+    margin-top: -20px;
+    background-color: #31313f00;
     padding: 2px;}
 
   .checkboxLabel {
